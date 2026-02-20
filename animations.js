@@ -33,4 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
+
+  // hide header on scroll down
+  let lastScrollTop = 0;
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const header = document.querySelector('.l-header');
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      header.classList.add('hidden');
+    } else if (scrollTop <= 0) {
+      header.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
 });

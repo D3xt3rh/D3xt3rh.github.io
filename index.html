@@ -21,9 +21,12 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#journey" class="nav__link">Journey</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#Publications" class="nav__link">Publications</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -43,6 +46,7 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohammad Saalim</span><br> Java Developer and AI Engineer</h3>
+                    <p class="home__contact">msaalim1998@gmail.com | +91-7905311170</p>
 
                     <a href="mailto:msaalim1998@gmail.com" class="button">Contact</a>
                 </div>
@@ -69,12 +73,27 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Mohammad Saalim </h2>
-                        <p class="about__text">Backend Developer with more than 2 years of experience in building scalable, high-performance applications.
-                        Proficient in Java, microservices, cloud computing, and distributed systems. Strong understanding of REST
-                        APIs, MySQL/NoSQL databases, and cloud platforms like AWS. Passionate about designing robust system
-                        architectures and enhancing platform reliability.</p>           
+                        <h2 class="about__subtitle">I'am Mohammad Saalim</h2>
+                        <p class="about__text">Backend Developer with 3 years of experience in building scalable, high-performance applications using Java, Spring Boot, and cloud technologies. Proficient in microservices, REST APIs, databases, and system design. Passionate about optimizing performance and enhancing reliability.</p>           
                     </div>                                   
+                </div>
+            </section>
+
+            <!--===== JOURNEY =====-->
+            <section class="journey section" id="journey">
+                <h2 class="section-title">Career Journey</h2>
+
+                <div class="journey__container bd-grid">
+                    <div class="journey__timeline">
+                        <div class="journey__item">
+                            <h4>Sept 2025 - Present</h4>
+                            <p>Backend Engineer at CloudKeeper</p>
+                        </div>
+                        <div class="journey__item">
+                            <h4>June 2022 - Sept 2024</h4>
+                            <p>Backend Engineer at Samsung Research Institute</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -84,8 +103,15 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"> Java, Python, SQL, SpringBoot, AWS .</p>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <p class="skills__text">
+                            <strong>Programming Languages:</strong> Java, Python, JavaScript, C++.<br>
+                            <strong>Databases:</strong> MySQL, Redis, MongoDB.<br>
+                            <strong>Frameworks:</strong> Spring Boot, Hibernate, Maven, Jenkins.<br>
+                            <strong>Tools:</strong> Postman, Confluence, Jira, Gitlab, GitHub, RabbitMQ, Kafka, Docker, Kubernetes.<br>
+                            <strong>Cloud:</strong> AWS, GCP, Azure.<br>
+                            <strong>Design:</strong> System design (HLD, LLD, API design).
+                        </p>
                         
                         <div class="skills__data">
                             <div class="skills__names">
@@ -190,6 +216,14 @@
                             <li>Used Hibernate for efficient database interaction and clean data access layers.</li>
                         </ul>
                     </article>
+
+                    <article class="project-card">
+                        <h3 class="project-card__title">Billing and Payment System</h3>
+                        <ul class="project-card__list">
+                            <li>Developed a distributed B2B billing platform to automate invoicing, PDF generation, and partner notifications across 30+ enterprise clients.</li>
+                            <li>Built core backend services using Spring Boot, Kafka, and Redis, optimized latency with caching and indexing, and ensured reliability with DLQ and retry logic.</li>
+                        </ul>
+                    </article>
                 </div>
             </section>
              <!--===== Publications =====-->
@@ -223,16 +257,44 @@
                 </div>
             </section>
 
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container bd-grid">
+                    <p><strong>B.Tech in Electronics and Communication</strong> (GPA: 9.45/10)<br>August 2018 - June 2022<br>Jamia Millia Islamia, New Delhi</p>
+                </div>
+            </section>
+
+            <!--===== CERTIFICATIONS =====-->
+            <section class="certifications section" id="certifications">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="certifications__container bd-grid">
+                    <ul>
+                        <li>Won Quarter team award in Cloudkeeper for being exceptional in the deliverables Quarter 2 2026</li>
+                        <li>Professional and Advanced SWC (Software Competency Certification)</li>
+                        <li>Samsung Incredibles Award in recognition of exceptional performance, Quarter 3 2023</li>
+                    </ul>
+                </div>
+            </section>
+
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <p><strong>Email:</strong> msaalim1998@gmail.com</p>
+                        <p><strong>Phone:</strong> +91-7905311170</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohammad-saalim/" target="_blank">linkedin.com/in/mohammad-saalim</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/d3xt3rh/" target="_blank">github.com/d3xt3rh</a></p>
+                    </div>
                     <form action="https://formspree.io/f/xeqnjkje" method="POST" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input" name="name_of_person">
-                        <input type="mail" placeholder="Email" class="contact__input" name="_replyto">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" name="message"></textarea>
-                        <input type="submit" value="Enter" class="contact__button button">
+                        <input type="email" placeholder="Email" class="contact__input" name="_replyto">
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
                     </form>
                 </div>
             </section>
