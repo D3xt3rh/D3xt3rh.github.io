@@ -31,6 +31,10 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" class="theme-toggle-btn">🌙</button>
+                </div>
             </nav>
         </header>
 
@@ -50,11 +54,8 @@
                     <a href="" class="home__social-icon"><i class='bx bxl-researchgate' ></i></a>
                 </div>
 
-                <div class="home__img">    
-                    <img src="img/Profile.jpg" alt="" style="opacity: .8" style="object-fit:cover;
-                    width:200px; 
-                    height:300px;
-                    border: solid 1px #CCC"/>
+                <div class="home__img">
+                    <img src="img/Profile.jpg" alt="Portrait of Mohammad Saalim" class="home__img-photo" />
                 </div>
             </section>
 
@@ -91,7 +92,7 @@
                                
                                 <span class="skills__name">Java</span>
                             </div>
-                            <div class="skills__bar skills__solidworks">
+                            <div class="skills__bar skills__java">
 
                             </div>
                             <div>
@@ -105,7 +106,7 @@
                          
                           <span class="skills__name">Python</span>
                       </div>
-                      <div class="skills__bar skills__solidworks">
+                      <div class="skills__bar skills__python">
 
                       </div>
                       <div>
@@ -118,7 +119,7 @@
                        
                         <span class="skills__name">SQL</span>
                     </div>
-                    <div class="skills__bar skills__solidworks">
+                    <div class="skills__bar skills__sql">
 
                     </div>
                     <div>
@@ -130,7 +131,7 @@
                      
                       <span class="skills__name">SpringBoot</span>
                   </div>
-                  <div class="skills__bar skills__solidworks">
+                  <div class="skills__bar skills__springboot">
 
                   </div>
                   <div>
@@ -142,7 +143,7 @@
                    
                     <span class="skills__name">AWS</span>
                 </div>
-                <div class="skills__bar skills__solidworks">
+                <div class="skills__bar skills__aws">
 
                 </div>
                 <div>
@@ -156,63 +157,40 @@
             </section>
 
             <!--===== PROJECTS =====-->
-           <section class="Projects section" id="Projects">
+            <section class="Projects section" id="Projects">
                 <h2 class="section-title">Projects</h2>
 
-               <div>
-                     
-                    <ul>
-                           <li>Designed and implemented microservices using Spring Boot, facilitating smooth integration with existing systems.</li> 
-                        <li>
-                            Developed and maintained Restful APIs for data access, resulting in improved data flow and performance.
-                        </li>
-                        <li>
-                             Utilized Hibernate for ORM and efficient database interactions, reducing boilerplate code.
-                        </li>
-                        <li>
-                            Performed API testing using Postman, ensuring high-quality and bug-free implementations.
-                        </li>
-                        <li>
-                            Collaborated with cross-functional teams using Confluence for documentation and project tracking.
-                        </li>
-                           
-                        </ul>           
-                    </div> 
-<h2>
-    ========================================================
-</h2
-                <div>
-                <ul>
-                    <li>
-                        Developed ASR systems using Kaldi and PyTorch, reducing WER by 0.96 and improving speech-to-text accuracy in various domains.
-                    </li> 
-                     <li>
-                        Fine-tuned models, enhancing ASR performance and user experience in multiple industries.
-                    </li>     
-                                      
-                    <li>
-                        Created domain-specific ASR models for healthcare and customer service, improving voice-to-text work-flows.     
-                    </li>
-                    <li>
-                        Implement speaker adaptation and noise reduction, increasing the robustness of ASR in noisy environments.
-                    </li>
-               </ul>
-                 </div>
-<h2>                     
-    ========================================================
-</h2>
-               
-                <ul>
-                    <li>
-                        Developed a high-availability payment processing microservice using Spring Boot and PostgreSQL.
-                    </li> 
-                       
-                    <li>
-                        Used Integrated Kafka for asynchronous transaction processing, improving fault tolerance, and Hibernate for efficient database interaction.
-                    </li>
-                    
-                    </ul>
-               
+                <div class="projects__grid bd-grid">
+                    <article class="project-card">
+                        <h3 class="project-card__title">Backend Microservices</h3>
+                        <ul class="project-card__list">
+                            <li>Designed and implemented microservices using Spring Boot, facilitating smooth integration with existing systems.</li>
+                            <li>Developed and maintained RESTful APIs for data access, resulting in improved data flow and performance.</li>
+                            <li>Utilized Hibernate for ORM and efficient database interactions, reducing boilerplate code.</li>
+                            <li>Performed API testing using Postman, ensuring high-quality and bug-free implementations.</li>
+                            <li>Collaborated with cross-functional teams using Confluence for documentation and project tracking.</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-card__title">ASR Systems with Kaldi &amp; PyTorch</h3>
+                        <ul class="project-card__list">
+                            <li>Developed ASR systems using Kaldi and PyTorch, reducing WER by 0.96 and improving speech-to-text accuracy in various domains.</li>
+                            <li>Fine-tuned models, enhancing ASR performance and user experience in multiple industries.</li>
+                            <li>Created domain-specific ASR models for healthcare and customer service, improving voice-to-text workflows.</li>
+                            <li>Implemented speaker adaptation and noise reduction, increasing the robustness of ASR in noisy environments.</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-card__title">Payment Processing Platform</h3>
+                        <ul class="project-card__list">
+                            <li>Developed a high-availability payment processing microservice using Spring Boot and PostgreSQL.</li>
+                            <li>Integrated Kafka for asynchronous transaction processing, improving fault tolerance and resilience.</li>
+                            <li>Used Hibernate for efficient database interaction and clean data access layers.</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
              <!--===== Publications =====-->
              <section class="publication section " id="Publications">
@@ -270,10 +248,11 @@
                 <a href="https://www.github.com/d3xt3rh/" class="footer__icon"><i class='bx bxl-github'></i></a>
                 <a href="https://twitter.com/SoNotSlim" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p>&#169; 2025 copyright all right reserved</p>
+            <p>&#169; 2026 copyright all rights reserved</p>
         </footer>
     </body>
-    </html>
+    <script src="animations.js"></script>
+</html>
 
 
         
