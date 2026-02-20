@@ -21,8 +21,11 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
                         <li class="nav__item"><a href="#Publications" class="nav__link">Publications</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -38,23 +41,20 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohammad Saalim</span><br> Java Developer and AI Engineer</h3>
+                    <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohammad Saalim</span><br> Software Engineer</h3>
 
                     <a href="mailto:msaalim1998@gmail.com" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/mohammad-saalim/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/https://www.instagram.com/not.so.slim/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.instagram.com/not.so.slim/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
                     <a href="https://github.com/d3xt3rh/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                     <a href="" class="home__social-icon"><i class='bx bxl-researchgate' ></i></a>
                 </div>
 
-                <div class="home__img">    
-                    <img src="img/Profile.jpg" alt="" style="opacity: .8" style="object-fit:cover;
-                    width:200px; 
-                    height:300px;
-                    border: solid 1px #CCC"/>
+                <div class="home__img">
+                    <img src="img/Profile.jpg" alt="Portrait of Mohammad Saalim" class="home__img-photo" />
                 </div>
             </section>
 
@@ -68,11 +68,8 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Mohammad Saalim </h2>
-                        <p class="about__text">Backend Developer with more than 2 years of experience in building scalable, high-performance applications.
-                        Proficient in Java, microservices, cloud computing, and distributed systems. Strong understanding of REST
-                        APIs, MySQL/NoSQL databases, and cloud platforms like AWS. Passionate about designing robust system
-                        architectures and enhancing platform reliability.</p>           
+                        <h2 class="about__subtitle">I'm Mohammad Saalim</h2>
+                        <p class="about__text">Software Engineer with 3+ years of experience building scalable, high-performance applications and cloud cost optimization solutions. Currently working at CloudKeeper, where I design intelligent cost optimization services across AWS and GCP, reducing infrastructure costs by 30-40% for enterprise clients. Previously at Samsung Research Institute, I engineered microservices and RESTful APIs using Java and Spring Boot, improving system performance by 40% and reducing query latency by 60%. Passionate about cloud computing, distributed systems, and designing robust architectures that drive business value.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -83,72 +80,73 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"> Java, Python, SQL, SpringBoot, AWS .</p>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <p class="skills__text"><strong>Programming Languages:</strong> Java, Python, JavaScript, C++</p>
+                        <p class="skills__text"><strong>Databases:</strong> MySQL, Redis, MongoDB</p>
+                        <p class="skills__text"><strong>Frameworks:</strong> Spring Boot, Hibernate, Maven, Jenkins</p>
+                        <p class="skills__text"><strong>Tools:</strong> Postman, Confluence, Jira, GitLab, GitHub, RabbitMQ, Kafka, Docker, Kubernetes</p>
+                        <p class="skills__text"><strong>Cloud Platforms:</strong> AWS (ECS, Lambda, Fargate), GCP (App Engine, Dataproc, Kubernetes Engine), Azure</p>
+                        <p class="skills__text"><strong>Design:</strong> System Design (HLD, LLD, API Design)</p>
                         
                         <div class="skills__data">
                             <div class="skills__names">
-                               
                                 <span class="skills__name">Java</span>
                             </div>
-                            <div class="skills__bar skills__solidworks">
-
+                            <div class="skills__bar" style="width: 90%;"></div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
                             </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Spring Boot</span>
+                            </div>
+                            <div class="skills__bar" style="width: 85%;"></div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">AWS</span>
+                            </div>
+                            <div class="skills__bar" style="width: 80%;"></div>
                             <div>
                                 <span class="skills__percentage">80%</span>
                             </div>
                         </div>
                         
-                          
-                   <div class="skills__data">
-                      <div class="skills__names">
-                         
-                          <span class="skills__name">Python</span>
-                      </div>
-                      <div class="skills__bar skills__solidworks">
-
-                      </div>
-                      <div>
-                          <span class="skills__percentage">60%</span>
-                      </div>
-                  </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar" style="width: 75%;"></div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
                         
-                  <div class="skills__data">
-                    <div class="skills__names">
-                       
-                        <span class="skills__name">SQL</span>
-                    </div>
-                    <div class="skills__bar skills__solidworks">
-
-                    </div>
-                    <div>
-                        <span class="skills__percentage">55%</span>
-                    </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__names">
-                     
-                      <span class="skills__name">SpringBoot</span>
-                  </div>
-                  <div class="skills__bar skills__solidworks">
-
-                  </div>
-                  <div>
-                      <span class="skills__percentage">45%</span>
-                  </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__names">
-                   
-                    <span class="skills__name">AWS</span>
-                </div>
-                <div class="skills__bar skills__solidworks">
-
-                </div>
-                <div>
-                    <span class="skills__percentage">60%</span>
-                </div>
-            </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">GCP</span>
+                            </div>
+                            <div class="skills__bar" style="width: 70%;"></div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">MySQL</span>
+                            </div>
+                            <div class="skills__bar" style="width: 80%;"></div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
                     <div>              
                         <img src="img/skills.jpg" alt="" class="skills__img">
                     </div>
@@ -156,64 +154,105 @@
             </section>
 
             <!--===== PROJECTS =====-->
-           <section class="Projects section" id="Projects">
+            <section class="Projects section" id="Projects">
                 <h2 class="section-title">Projects</h2>
 
-               <div>
-                     
-                    <ul>
-                           <li>Designed and implemented microservices using Spring Boot, facilitating smooth integration with existing systems.</li> 
-                        <li>
-                            Developed and maintained Restful APIs for data access, resulting in improved data flow and performance.
-                        </li>
-                        <li>
-                             Utilized Hibernate for ORM and efficient database interactions, reducing boilerplate code.
-                        </li>
-                        <li>
-                            Performed API testing using Postman, ensuring high-quality and bug-free implementations.
-                        </li>
-                        <li>
-                            Collaborated with cross-functional teams using Confluence for documentation and project tracking.
-                        </li>
-                           
-                        </ul>           
-                    </div> 
-<h2>
-    ========================================================
-</h2
-                <div>
-                <ul>
-                    <li>
-                        Developed ASR systems using Kaldi and PyTorch, reducing WER by 0.96 and improving speech-to-text accuracy in various domains.
-                    </li> 
-                     <li>
-                        Fine-tuned models, enhancing ASR performance and user experience in multiple industries.
-                    </li>     
-                                      
-                    <li>
-                        Created domain-specific ASR models for healthcare and customer service, improving voice-to-text work-flows.     
-                    </li>
-                    <li>
-                        Implement speaker adaptation and noise reduction, increasing the robustness of ASR in noisy environments.
-                    </li>
-               </ul>
-                 </div>
-<h2>                     
-    ========================================================
-</h2>
-               
-                <ul>
-                    <li>
-                        Developed a high-availability payment processing microservice using Spring Boot and PostgreSQL.
-                    </li> 
-                       
-                    <li>
-                        Used Integrated Kafka for asynchronous transaction processing, improving fault tolerance, and Hibernate for efficient database interaction.
-                    </li>
-                    
-                    </ul>
-               
+                <div class="projects__grid bd-grid">
+                    <article class="project-card">
+                        <h3 class="project-card__title">Billing and Payment System</h3>
+                        <p class="project-card__period" style="color: var(--muted-color); font-size: 0.85rem; margin-bottom: 0.75rem;">June 2022 - Sept 2024</p>
+                        <ul class="project-card__list">
+                            <li>Developed a distributed B2B billing platform to automate invoicing, PDF generation, and partner notifications across <strong>30+ enterprise clients</strong>.</li>
+                            <li>Built core backend services using <strong>Spring Boot, Kafka, and Redis</strong>, optimized latency with caching and indexing, and ensured reliability with DLQ and retry logic.</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-card__title">SpotBot Optimization Engine</h3>
+                        <p class="project-card__period" style="color: var(--muted-color); font-size: 0.85rem; margin-bottom: 0.75rem;">Sept 2025 - Feb 2026</p>
+                        <ul class="project-card__list">
+                            <li>Built a <strong>SpotBot optimization engine</strong> on AWS ECS Fargate that dynamically shifts fault-tolerant workloads to <strong>Fargate Spot</strong>, reducing compute costs by up to <strong>60–70%</strong> while maintaining service reliability.</li>
+                            <li>Designed workload classification and fallback strategies to safely migrate services to spot capacity, with automatic rescheduling on interruption and hybrid capacity (spot + on-demand) support.</li>
+                            <li>Implemented capacity provider strategies and scaling policies in ECS to optimize resource allocation across <strong>FARGATE and FARGATE_SPOT</strong>, improving utilization and minimizing waste.</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
+
+            <!--===== EXPERIENCE =====-->
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience__container bd-grid">
+                    <div class="experience__item">
+                        <div class="experience__header">
+                            <div>
+                                <h3 class="experience__title">Software Engineer</h3>
+                                <p class="experience__company">CloudKeeper</p>
+                            </div>
+                            <span class="experience__date">Sep 30 2025 - Present</span>
+                        </div>
+                        <ul class="experience__list">
+                            <li>Reduced cloud infrastructure costs by <strong>30–40%</strong> for multiple enterprise clients by designing automated resource cleanup, rightsizing, idle and overprovisioned resource detection workflows across AWS and GCP.</li>
+                            <li>Built intelligent <strong>AWS and GCP cost recommendation services</strong> that analyze usage patterns and suggest optimal services (ECS vs Lambda, App Engine vs GKE, Dataproc vs managed alternatives), improving cost efficiency across <strong>35%+</strong> of customers.</li>
+                            <li>Designed and deployed <strong>microservices for cloud cost optimization</strong> with caching and indexing strategies, reducing API latency and compute overhead for real-time cost analysis.</li>
+                            <li>Implemented a <strong>Spot-based compute optimization engine (SpotBot)</strong> on ECS Fargate, enabling customers to leverage spot capacity and reduce compute costs significantly.</li>
+                            <li>Worked across cloud platforms including <strong>AWS (ECS, Lambda, Fargate)</strong> and <strong>GCP (App Engine, Dataproc, Kubernetes Engine)</strong> to deliver cross-cloud optimization strategies.</li>
+                            <li>Partnered with FinOps and customer engineering teams to deliver actionable cost insights dashboards and optimization reports for enterprise workloads.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience__item">
+                        <div class="experience__header">
+                            <div>
+                                <h3 class="experience__title">Software Engineer</h3>
+                                <p class="experience__company">Samsung Research Institute</p>
+                            </div>
+                            <span class="experience__date">June 2022 - Sept 2024</span>
+                        </div>
+                        <ul class="experience__list">
+                            <li>Designed and implemented over <strong>10+ microservices</strong> using <strong>Java and Spring Boot</strong>, enabling seamless integration with legacy systems.</li>
+                            <li>Engineered and maintained a suite of <strong>15+ RESTful APIs</strong> for critical data services, resulting in a <strong>40% improvement</strong> in system performance and <strong>25% faster data retrieval</strong>.</li>
+                            <li>Leveraged Hibernate ORM, cutting down boilerplate code by <strong>50%</strong> and boosting database query <strong>efficiency by 35%</strong>.</li>
+                            <li>Conducted comprehensive API testing with Postman, leading to <strong>98% test coverage</strong> and reducing <strong>production bugs by 45%</strong>.</li>
+                            <li>Reduced query latency by <strong>60%</strong> by analyzing execution plans and adding proper indexing on frequently accessed tables in MySQL.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__item">
+                        <h3 class="education__degree">B.Tech in Electronics and Communication <span class="education__gpa">(GPA: 9.45/10)</span></h3>
+                        <p class="education__institution">Jamia Millia Islamia, New Delhi</p>
+                        <p class="education__period">August 2018 - June 2022</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CERTIFICATIONS =====-->
+            <section class="certifications section" id="certifications">
+                <h2 class="section-title">Certifications & Awards</h2>
+
+                <div class="certifications__container bd-grid">
+                    <ul class="certifications__list">
+                        <li class="certifications__item">
+                            <p class="certifications__text">Won <strong>Quarter team award</strong> in CloudKeeper for being exceptional in the deliverables Quarter 2 2026</p>
+                        </li>
+                        <li class="certifications__item">
+                            <p class="certifications__text"><strong>Professional and Advanced SWC</strong> (Software Competency Certification)</p>
+                        </li>
+                        <li class="certifications__item">
+                            <p class="certifications__text"><strong>Samsung Incredibles Award</strong> in recognition of exceptional performance, Quarter 3 2023</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
              <!--===== Publications =====-->
              <section class="publication section " id="Publications">
                 <h2 class="section-title">Publications</h2>
@@ -266,7 +305,7 @@
             <div class="footer__social">
              
                 <a href="https://www.instagram.com/not.so.slim/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                 <a href="https://http://linkedin.com/in/mohammad-saalim/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                 <a href="https://www.linkedin.com/in/mohammad-saalim/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://www.github.com/d3xt3rh/" class="footer__icon"><i class='bx bxl-github'></i></a>
                 <a href="https://twitter.com/SoNotSlim" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
