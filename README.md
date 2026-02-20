@@ -7,23 +7,26 @@ A modern, responsive portfolio website showcasing my professional experience, sk
 ## ✨ Features
 
 - **Modern & Responsive Design** - Clean, professional UI with smooth animations and gradients
+- **Dark/Light Mode Toggle** - Switch between themes with smooth transitions
+- **Scroll Animations** - Fade-in effects for sections and header hide on scroll down
 - **Fully Responsive** - Optimized for desktop, tablet, and mobile devices
 - **Smooth Scrolling Navigation** - Easy navigation between sections
 - **Professional Sections:**
   - Home/Introduction
   - About Me
-  - Professional Experience
+  - Career Journey
   - Technical Skills
   - Projects
-  - Education
-  - Certifications & Awards
   - Publications
+  - Education
+  - Certifications
   - Contact Form
 
 ## 🛠️ Technologies Used
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with CSS variables, gradients, and animations
+- **JavaScript** - Interactive features, animations, and theme switching
 - **Boxicons** - Icon library for social media and UI elements
 - **Google Fonts** - Poppins font family
 - **Formspree** - Contact form handling
@@ -67,6 +70,7 @@ D3xt3rh.github.io/
 │
 ├── index.html          # Main HTML file
 ├── index.css           # Stylesheet with modern design
+├── animations.js       # JavaScript for animations and interactions
 ├── README.md           # Project documentation
 │
 └── img/                # Image assets
@@ -76,11 +80,12 @@ D3xt3rh.github.io/
 
 ## 🎨 Design Features
 
-- **Color Scheme:** Modern indigo/purple gradient theme
+- **Color Scheme:** Modern indigo/purple gradient theme with dark/light mode support
 - **Typography:** Poppins font family for clean readability
 - **Layout:** Grid-based responsive layout
-- **Animations:** Smooth hover effects and transitions
+- **Animations:** Smooth hover effects, fade-in animations, and scroll-triggered effects
 - **Cards:** Glassmorphism-style cards for sections
+- **Theme Toggle:** Switch between light and dark themes
 
 ## 📝 Sections Overview
 
@@ -91,17 +96,11 @@ D3xt3rh.github.io/
 
 ### About
 - Professional summary
-- Key achievements and expertise
 
-### Experience
-- **CloudKeeper** (Sep 2025 - Present)
-  - Cloud cost optimization
-  - AWS/GCP services
-  - SpotBot optimization engine
-- **Samsung Research Institute** (June 2022 - Sept 2024)
-  - Microservices development
-  - RESTful API engineering
-  - Performance optimization
+### Career Journey
+- Visual timeline of professional roles
+- Backend Engineer at CloudKeeper (Sept 2025 - Present)
+- Backend Engineer at Samsung Research Institute (June 2022 - Sept 2024)
 
 ### Skills
 - Programming Languages: Java, Python, JavaScript, C++
@@ -118,10 +117,10 @@ D3xt3rh.github.io/
 - B.Tech in Electronics and Communication (GPA: 9.45/10)
 - Jamia Millia Islamia, New Delhi
 
-### Certifications & Awards
-- CloudKeeper Quarter Team Award (Q2 2026)
-- Professional and Advanced SWC
-- Samsung Incredibles Award (Q3 2023)
+### Certifications
+- Won Quarter team award in Cloudkeeper for being exceptional in the deliverables Quarter 2 2026
+- Professional and Advanced SWC (Software Competency Certification)
+- Samsung Incredibles Award in recognition of exceptional performance, Quarter 3 2023
 
 ## 🔧 Customization
 
@@ -132,17 +131,21 @@ To customize this portfolio for your own use:
    - Update social media links
    - Replace profile image in `img/Profile.jpg`
 
-2. **Modify Colors**
-   - Edit CSS variables in `index.css`:
+2. **Modify Colors and Themes**
+   - Edit CSS variables in `index.css` for light mode:
      ```css
      :root {
-       --first-color: #6366F1;  /* Primary color */
+       --first-color: #00D4FF;    /* Primary color */
        --second-color: #0F172A;  /* Text color */
-       --bg-color: #F3F4F6;      /* Background color */
+       --bg-color: #F8FAFC;      /* Background color */
      }
      ```
+   - For dark mode colors, edit the `.dark-mode` variables in `index.css`
 
-3. **Update Contact Form**
+3. **Customize Animations**
+   - Modify `animations.js` for scroll behaviors, theme switching, and animation timings
+
+4. **Update Contact Form**
    - Replace Formspree endpoint in the contact form section
 
 ## 📧 Contact

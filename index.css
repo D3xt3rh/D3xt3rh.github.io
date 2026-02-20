@@ -14,6 +14,7 @@
   --accent-orange: #F97316; /* Orange */
   --accent-pink: #EC4899; /* Pink */
   --accent-purple: #8B5CF6; /* Purple */
+  --accent-black: #374151; /* Black */
 
   --bg-color: #F8FAFC; /* Light background */
   --card-bg: #FFFFFF; /* White cards */
@@ -256,6 +257,12 @@ img {
   font-weight: var(--font-semi);
 }
 
+.nav__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav__logo {
   color: var(--second-color);
   font-weight: 700;
@@ -267,27 +274,64 @@ img {
   color: var(--first-color);
 }
 
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: 0.5s;
-    border-radius: 1.5rem 0 0 1.5rem;
-    box-shadow: -18px 24px 60px rgba(15, 23, 42, 0.4);
-  }
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--second-color);
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--first-color);
 }
 
 .nav__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .nav__item {
   margin-bottom: var(--mb-3);
+}
+
+.nav__link {
+  color: var(--second-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  color: var(--second-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.show {
+  right: 0;
+}
+
+.nav__menu {
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  width: 80%;
+  padding: 2rem;
+  background-color: var(--second-color);
+  transition: 0.5s;
+  border-radius: 1.5rem 0 0 1.5rem;
+  box-shadow: -18px 24px 60px rgba(15, 23, 42, 0.4);
+}
+
+.dark-mode .nav__menu {
+  background-color: var(--bg-color);
 }
 
 .nav__link {
@@ -702,7 +746,9 @@ img {
 .project-card:nth-child(3) {
   border-left: 4px solid var(--accent-orange);
 }
-
+.project-card:nth-child(4) {
+  border-left: 4px solid var(--accent-purple);
+}
 .project-card__title {
   font-size: 1.05rem;
   font-weight: 600;
